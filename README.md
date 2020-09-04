@@ -61,10 +61,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+
+to write server-side code while using JS
+
 1. Understand and explain the use of Middleware?
+
+functions that execute in the middle of a request with express...moves data to the next level so it can continue going through the lifecycle of the request
+
 1. The basic principles of the REST architectural style.
+
+REST is acronym for REpresentational State Transfer. It is architectural style for distributed hypermedia systems and was first presented by Roy Fielding in 2000 in his famous dissertation.
+
 1. Understand and explain the use of Express Routers.
+
+Express routers allow us to map the requests to the proper handler based on which http method we're using.
+
 1. Describe tooling used to manually test the correctness of an API.
+
+uses the localhost to be able to manipulate the body and data on the server without having frontend or a deployed site with acess to the browser. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
