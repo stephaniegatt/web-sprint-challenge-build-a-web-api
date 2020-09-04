@@ -64,7 +64,7 @@ router.post('/', validateBody, (req, res) => {
   }
 
   function validateBody(req, res, next) {
-    if (body) {
+    if (req.body) {
         next();
     } else {
       res.status(400).json({ message: "missing body" });

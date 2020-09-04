@@ -66,7 +66,7 @@ function validateProjectId(req, res, next) {
 // check if a body is present before going to next()
 // post needs to check if there is a body present 
 function validateBody(req, res, next) {
-    if (body) {
+    if (req.body) {
         next();
     } else {
         res.status(400).json({ message: "missing body" });
