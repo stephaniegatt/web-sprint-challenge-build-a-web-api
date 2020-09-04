@@ -14,16 +14,16 @@ Go code!
 */
 const express = require('express');
 const helmet = require('helmet');
-// const projectsRouter = require('./projects-router');
-// const actionsRouter = require('./actions-router');
+const projectsRouter = require('./projects-router');
+const actionsRouter = require('./actions-router');
 const server = express();
 const port = process.env.PORT || 8000;
 
 server.use(express.json());
 server.use(helmet());
 
-// server.use('/api/projects', projectsRouter);
-// server.use('/api/actions', actionsRouter);
+server.use('/api/projects', projectsRouter);
+server.use('/api/actions', actionsRouter);
 
 server.listen(port, () => {
     console.log(`\n*** Server Running on http://localhost:${port} ***\n`);
